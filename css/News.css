@@ -1,0 +1,140 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  row-gap: 20px;
+  justify-content: space-between;
+  padding: 20px 55px;
+  align-items: center;
+  background-color: #1e2d66;
+  flex-wrap: wrap;
+}
+header > span {
+  color: #ffffff;
+  font-size: 21px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+i {
+  font-size: 18px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+}
+header:last-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 29px 54px;
+  align-items: center;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 40px;
+}
+li {
+  list-style: none;
+}
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #707070;
+}
+.sectionImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sectionImg > img {
+  width: 100%;
+  height: 260px;
+}
+.sectionImg > span {
+  position: absolute;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+}
+.sectionNews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 60px;
+  justify-content: center;
+  margin-top: 160px;
+  margin-bottom: 300px;
+}
+.sectionNews > article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  min-width: 300px;
+  width: 24%;
+}
+.sectionNews > article > img {
+  width: 100%;
+  min-width: 250px;
+  height: 250px;
+}
+.sectionNews > article > span:first-of-type {
+  font-size: 14px;
+  color: #989898;
+}
+.sectionNews > article > span:last-of-type {
+  font-size: 24px;
+  color: #1e2d66;
+}
+.sectionNews > article > p {
+  font-size: 18px;
+  color: #5a5a5a;
+}
+footer {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 20px;
+  background-color: #1e2d66;
+}
+@media only screen and (max-width: 800px) {
+header > span {
+    font-size: 15px;
+}
+a {
+    font-size: 15px;
+}
+.sectionImg > span {
+    font-size: 25px;
+}
+.sectionNews {
+    row-gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.sectionNews > article > span:last-of-type {
+    font-size: 18px;
+}
+.sectionNews > article > p {
+    font-size: 15px;
+}
+footer{
+  font-size: 15px;
+}
+}
